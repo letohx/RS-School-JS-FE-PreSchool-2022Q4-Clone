@@ -63,7 +63,8 @@ body{
   margin: 0 auto;
 }
    
-/* header */
+/* header start*/
+
 .header{
   background: #EDF2EC;
 }
@@ -78,18 +79,18 @@ body{
   min-height: 134px;
 }
 .header__logo{
-     width: 100px;
-     height: 22px;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: flex-end;
-   }
+  width: 100px;
+  height: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  lign-items: flex-end;
+}
 .header__list{
   display: flex;
   flex-wrap: wrap;
 }
 .header__item{
-  margin-right: 46px;
+  margin-right: 46px; 
 }
 .header__item:last-child{
   margin-right: 0;
@@ -111,5 +112,79 @@ body{
 }
 .header__link:hover, .header__link:focus, .header__link:active{
   color: #E06733;
+  font-weight: 700;
   transition: .2s;
 }
+
+/* header end*/
+
+/* welcome start*/
+
+.welcome{
+  min-height: 532px;
+  background: #EDF2EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome__wrapper{
+  width: 1222px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leafs{
+  width: 449px;
+  height: auto;
+}
+.welcome-text{
+  width: 549px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: stretch;
+}
+.welcome-text-header{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: #717171;
+}
+.green-color{
+  color: #499A18
+}
+.welcome-text-text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #636060;
+}
+.button{
+  width: 158px;
+  height: 44px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 14px 24px;
+  border: 2px solid #E06733;
+  border-radius: 10px;
+  color: #000000;
+}
+.button:hover, .button:focus, .button:active{
+  background: #E06733;
+  color: #FFFFFF;
+  transition: .3s;
+}
+
+/* welcome end*/
