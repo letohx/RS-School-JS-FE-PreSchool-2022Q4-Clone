@@ -188,3 +188,52 @@ body{
 }
 
 /* welcome end*/
+
+/* about start*/
+
+.about{
+  min-height: 666px;
+  background: #EDF2EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+} 
+.about__wrapper{
+  width: 1222px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-text{
+  width: 605px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: stretch;
+}
+.about-text-header{
+  width: 463px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+}
+.orange-color{
+  color: #E06733
+}
+.about-text-text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #636060;
+  line-height: 30px;
+}
+
+/* about end*/
