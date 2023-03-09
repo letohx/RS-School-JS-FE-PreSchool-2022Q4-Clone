@@ -193,7 +193,6 @@ body{
 
 .about{
   min-height: 666px;
-  background: #EDF2EC;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,3 +236,59 @@ body{
 }
 
 /* about end*/
+
+/* service start*/
+
+.service{
+  min-height: 1300px;
+  background: #EDF2EC;
+}
+.service__wrapper{
+  width: 1222px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.services-content{
+  width: 1010px;
+  height: 94px;
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+.services-text-header{
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  width: 306px;
+  height: 94px;
+}
+.nav-services{
+  width: 559px;
+  height: 50px;
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+  padding-top: 15px;
+}
+.button-servises{
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  width: 161px;
+  height: 50px;
+}
+.button-servises:hover, .button-servises:focus, .button-servises:active{
+  background: #E06733;
+  color: #FFFFFF;
+  transition: .3s;
+}
+
