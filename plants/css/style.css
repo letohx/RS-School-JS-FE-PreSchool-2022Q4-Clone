@@ -180,6 +180,7 @@ body{
   border: 2px solid #E06733;
   border-radius: 10px;
   color: #000000;
+  background: hsla(0, 0%, 0%, 0);
 }
 .button:hover, .button:focus, .button:active{
   background: #E06733;
@@ -286,6 +287,7 @@ body{
   color: #E06733;
   width: 161px;
   height: 50px;
+  background: hsla(0, 0%, 0%, 0);
 }
 .button-servises:hover, .button-servises:focus, .button-servises:active{
   background: #E06733;
@@ -348,4 +350,137 @@ body{
 
 /* services end*/
 /* service end*/
+
+/* prices start*/
+
+.prices{
+  min-height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #ffffff;
+} 
+.prices__wrapper{
+  width: 1222px;
+  padding-top: 40px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.prices_item{
+  width: 332px;
+  height: 391px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: stretch;
+}
+.text_prices_item{
+  width: 135px;
+  height: 49px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px; 
+  color: #000000;
+}
+.text_call_wrapper{
+  height: 405px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: stretch;
+}
+.text_call_us{
+  width: 452px;
+  height: 191px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.text_call_us-header{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: #000000;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+.button-prices{
+  width: 162px;
+  height: 50px;
+  left: 1169px;
+  top: 181.01px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: 'Inika';
+  text-align: center;
+  color: #E06733;
+  background: hsla(0, 0%, 0%, 0);
+}
+.button-prices:hover, .button-prices:focus, .button-prices:active{
+  background: #E06733;
+  color: #FFFFFF;
+  transition: .3s;
+}
+.leafs-mini-pic{
+  width: 157px;
+  height: 180px;
+  align-self: flex-end;
+}
+.prices_items{
+  width: 332px;
+  height: 282.01px;
+  left: 109px;
+  top: 149px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+.button-prices-items{
+  width: 250px;
+  height: 50px;
+  margin: 16px 40px;
+  background: #EDF2EC;
+  border-radius: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+}
+.accordinon_button_wrapper{
+  margin: 13px 40px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	text-align: center;
+	align-content: stretch;
+}
+
+/* prices end*/
 
