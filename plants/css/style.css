@@ -42,3 +42,74 @@
           url('../fonts/inter-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
           url('../fonts/inter-v12-latin-700.svg#Inter') format('svg'); /* Legacy iOS */
    }
+
+html{
+  box-sizing: border-box;
+}
+*, ::before, ::after{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #636060;
+}
+.wrapper{
+  max-width: 1222px;
+  margin: 0 auto;
+}
+   
+/* header */
+.header{
+  background: #EDF2EC;
+}
+
+.header__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 1220px;
+  height: 50px;
+  min-height: 134px;
+}
+.header__logo{
+     width: 100px;
+     height: 22px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-end;
+   }
+.header__list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__item{
+  margin-right: 46px;
+}
+.header__item:last-child{
+  margin-right: 0;
+}
+.header__logo-text{
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.header__link{
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #010201;
+  text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+  color: #E06733;
+  transition: .2s;
+}
