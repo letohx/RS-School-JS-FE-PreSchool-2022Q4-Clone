@@ -117,6 +117,35 @@ body{
   font-weight: 700;
   transition: .5s;
 }
+.header__burger{
+  width: 40px;
+  height: 24px;
+  position: relative;
+  display: none;
+}
+.burger__line{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #717171;
+  position: absolute;
+  left: 0;
+}
+.burger__line1{
+  top: 0;
+}
+.burger__line2{
+  top: 33.3%;
+  transform: translateY(-33.3%);
+}
+.burger__line3{
+  top: 66.6%;
+  transform: translateY(-66.6%);
+}
+.burger__line4{
+  bottom: 0;
+}
+
 
 /* header end*/
 
@@ -944,6 +973,382 @@ body{
   }
 }
 
+@media screen and (max-width: 701px) {
+  .header__burger{
+    display: block;
+  }
+  .header__nav{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #EDF2EC;
+    z-index: 10;
+    padding: 75px;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+  .header__nav_active{
+    transform: translateX(0%);    
+  }
+  .header__item{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .header__item:last-child{
+    margin-bottom: 0;
+  }
+  .header__link{
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .header__nav-close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+  }
+  .header__nav-close-line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #717171;
+    position: absolute;
+    top: 50%;
+  }
+  .header__nav-close-line:first-child{
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .header__nav-close-line:last-child{
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .leafs{
+    display: none;
+  }
+  .welcome__wrapper{
+    flex-direction: row;
+    max-width: 668px;
+    width: 330px;
+  }
+  .buttons-services{
+    flex-wrap: wrap;    
+  }
+  .button-services{
+    margin-bottom: 20px;    
+  }
+  .prices__wrapper{
+    flex-direction: column;
+  }
+  .leafs-mini-pic{
+    display: none;
+  }
+  .contacts__container{
+    width: 300px;
+  }
+  .wrapper{
+    padding: 0 25px;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 621px) {
+  .header{
+    height: 96px;
+  }
+  .header__logo{
+    margin-bottom: 26px;
+  }
+  .header__burger{
+    margin-bottom: 25px;
+  }
+  .welcome{
+    height: 300px;
+    min-height: 300px;
+  }
+  .welcome__wrapper{
+    height: 252px;
+    margin-top: 70px;
+    width: auto;
+  }
+  .welcome-text{
+    height: 252px;
+  }
+  .welcome-text-header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    align-items: center;
+    color: #717171;
+  }
+  .welcome-text-text{
+    margin-top: -55px;
+    padding-left: 0px;
+  }
+  .button{
+    width: 100px;
+    height: 34px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    padding: 0px 16px;
+    margin-top: -50px;
+  }
+  .about{
+    height: 516px;
+    min-height: 516px;
+  }
+  .about__wrapper{
+    height: 516px;
+    min-height: 516px;
+    margin-top: 15px;
+  }
+  .about-text{
+    width: auto;
+  }
+  .about-text-header{
+    width: 288px;
+    height: 57.74px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    color: #499A18;
+    margin-top: 0px;
+  }
+  .about-text-text{
+    width: auto;
+    height: 228.38px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #636060;
+    margin-bottom: 42px;
+  }
+  .houseplant-1{
+    width: 150px;
+    margin-top: 100;
+    transform: translateY(-15px);
+  }
+  .service{
+    height: 3150px;
+    min-height: 3150px;
+  }
+  .services-text-header{
+    width: 187px;
+    height: 69px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: #499A18;
+  }
+  .buttons-services{
+    width: 252px;
+    height: 79px;
+    padding-top: 15px;
+  }
+  .button-servises{
+    width: 121px;
+    height: 35px;
+    left: 25px;
+    top: 134px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #E06733;
+    margin-bottom: 10px;
+  }
+  .servises{
+    justify-content: center;
+    margin-top: 59px;
+    padding-bottom: 40px;
+    grid-gap: 51px 10px;
+  }
+  .services-content{
+    margin-top: -31px;
+  }
+  .prices{
+    width: auto;
+  }
+  .prices__wrapper{
+    align-items: center;
+    padding-top: 25px;
+  }
+  .prices_item{
+    align-items: center;
+    height: 300px;
+    width: 320px;
+  }
+  .text_call_us{
+    align-items: center;
+  }
+  .text_call_us-header{
+    text-align: center;
+  }
+  .text_prices_item{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+  .prices{
+    height: 512px;
+    min-height: 512px;
+  }
+  .prices_items{
+    width: 224px;
+    height: 235px;
+    margin-bottom: 0px;
+    justify-content: space-around;
+    padding: 20px 0px;
+  }
+  .button-prices-items{
+    width: 180px;
+    height: 50px;
+    margin: 0;
+  }
+  .accordinon_button_wrapper{
+    width: 110px;
+    height: 17.9px;
+    left: 131px;
+    top: 136.91px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000; 
+    margin: 17px 31px;
+  }
+  .text_call_us{
+    width: 230px;
+    height: 126px;
+    margin-top: 20px;
+  }
+  .text_call_us-header{
+    width: 230px;
+    height: 77px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+  }
+  .button-prices{
+    width: 121px;
+    height: 35px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #E06733;
+  }
+  .text_call_wrapper{
+    margin-top: 0px;
+  }
+  .contacts{
+    height: 445px;
+    min-height: 445px;
+  }
+  .contacts__wrapper{
+    min-height: 445px;
+  }
+  .contacts__header{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    color: #499A18;
+    padding-top: 25px;
+  }
+  .contatcts__img{
+    width: 100px;
+    height: 124.25px;
+  }
+  .contacts__img_wraper{
+    max-width: 122px;
+  }
+  .contact_woman-pic{
+    width: 100px;
+  }
+  .contacts__container{
+    margin-top: -45px;
+  }
+  .contacts__container_wrapper{
+    padding-right: 22px;
+  }
+  .footer{
+    height: 146px;
+  }
+  .social{
+    margin-top: -10px;
+  }
+  .footer-data{
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .about_us{
+    width: 320;
+  }
+  .about__wrapper{
+    width: auto;
+    min-width: 320px;
+  }
+  .prices{
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+  }
+}
+
+
+@media screen and (max-width: 365px) {
+  .houseplant-1{
+    transform: translateY(10px);
+  }
+  .wrapper{
+    padding: 0px 0px;
+  }
+}
 
 
 
