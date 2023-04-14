@@ -21,7 +21,9 @@
     }
 }());
 
+
 // Scroll to anchors
+
 (function () {
 
     const smoothScroll = function (targetEl, duration) {
@@ -58,11 +60,60 @@
         });
     };
     scrollTo();
+
 }());
 
 
+// Services
 
+(function () {
 
+  const buttonGardens = document.getElementById('js-buttonGardens');
+  const buttonLawn = document.getElementById('js-buttonLawn');
+  const buttonPlanting = document.getElementById('js-buttonPlanting');
 
-//
-console.log('Требования к вёрстке\nВёрстка соответствует макету. Ширина экрана 768px +24\nблок <header> +2\nсекция welcome +3\nсекция about +4\nсекция service +4\nсекция prices +4\nсекция contacts +4\nблок <footer> + 3\nВёрстка соответствует макету. Ширина экрана 380px +24\nблок <header> +2\nсекция welcome +3\nсекция about +4\nсекция service +4\nсекция prices +4\nсекция contacts +4\nблок <footer> + 3\nНи на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15\nнет полосы прокрутки при ширине страницы от 1440рх до 380px +7\nнет полосы прокрутки при ширине страницы от 380px до 320рх +8\nНа ширине экрана 380рх и меньше реализовано адаптивное меню +22 (Допускается появление адаптивного меню на ширине более 380, но не допускается на ширине более 770px)\nпри ширине страницы 380рх панель навигации скрывается, появляется бургер-иконка +2\nпри нажатии на бургер-иконку плавно появляется адаптивное меню +4\nадаптивное меню соответствует цветовой схеме макета +4\nпри нажатии на крестик адаптивное меню плавно скрывается уезжая за экран +4\nссылки в адаптивном меню работают, обеспечивая плавную прокрутку по якорям +4\nпри клике по ссылке в адаптивном меню адаптивное меню плавно скрывается, также скрытие меню происходит если сделать клик вне данного окна +4');
+  const servicesGarden = document.querySelectorAll('.js-servicesGarden');
+  const servicesLawn = document.querySelectorAll('.js-servicesLawn');
+  const servicesPlanting = document.querySelectorAll('.js-servicesPlanting');
+
+  buttonGardens.addEventListener('click', (event) => {
+    if (buttonLawn.classList.contains('button-services-focus') && buttonPlanting.classList.contains('button-services-focus')) {
+      return;
+    }
+    if (buttonLawn.classList.contains('button-services-focus') || buttonPlanting.classList.contains('button-services-focus')) {
+      servicesGarden.forEach(x => x.classList.toggle('serviceBlur'));
+    } else {
+      servicesLawn.forEach(x => x.classList.toggle('serviceBlur'));
+      servicesPlanting.forEach(x => x.classList.toggle('serviceBlur'));
+    }
+    buttonGardens.classList.toggle('button-services-focus');
+  })
+
+  buttonLawn.addEventListener('click', (event) => {
+    if (buttonGardens.classList.contains('button-services-focus') && buttonPlanting.classList.contains('button-services-focus')) {
+      return;
+    }
+    if (buttonGardens.classList.contains('button-services-focus') || buttonPlanting.classList.contains('button-services-focus')) {
+      servicesLawn.forEach(x => x.classList.toggle('serviceBlur'));
+    } else {
+      servicesGarden.forEach(x => x.classList.toggle('serviceBlur'));
+      servicesPlanting.forEach(x => x.classList.toggle('serviceBlur'));
+    }
+    buttonLawn.classList.toggle('button-services-focus');
+  })
+
+  buttonPlanting.addEventListener('click', (event) => {
+    if (buttonGardens.classList.contains('button-services-focus') && buttonLawn.classList.contains('button-services-focus')) {
+      return;
+    }
+    if (buttonGardens.classList.contains('button-services-focus') || buttonLawn.classList.contains('button-services-focus')) {
+      servicesPlanting.forEach(x => x.classList.toggle('serviceBlur'));
+    } else {
+      servicesGarden.forEach(x => x.classList.toggle('serviceBlur'));
+      servicesLawn.forEach(x => x.classList.toggle('serviceBlur'));
+    }
+    buttonPlanting.classList.toggle('button-services-focus');
+  })
+
+}());
+
