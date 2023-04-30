@@ -100,17 +100,17 @@
                         </div>
                         
                         <div class="buttons-services">
-                            <button class="button-servises">Gardens</button>
-                            <button class="button-servises">Lawn</button>
-                            <button class="button-servises">Planting</button>
+                            <button id="js-buttonGardens" class="button-servises">Gardens</button>
+                            <button id="js-buttonLawn" class="button-servises">Lawn</button>
+                            <button id="js-buttonPlanting" class="button-servises">Planting</button>
                         </div>
                     </div>
     
                     <div class="servises">
     
-                        <figure class="service_item service_item_size_desktop">
+                        <figure class="service_item service_item_size_desktop js-servicesGarden">
                             <div class="service_item-pic-wrap">
-                                <img src="/letohx-JSFEPRESCHOOL2022Q4/plants/img/service-1.jpg" alt="Garden care" class="service_item-pic"> 
+                                <img src="./img/service-1.jpg" alt="Garden care" class="service_item-pic"> 
                             </div>               
                             <figcaption class="service_item-title">
                                 <div class="service_item-title-header">
@@ -122,9 +122,9 @@
                             </figcaption>
                         </figure>
     
-                        <figure class="service_item service_item_size_desktop">
+                        <figure class="service_item service_item_size_desktop js-servicesPlanting">
                             <div class="service_item-pic-wrap">
-                                <img src="/letohx-JSFEPRESCHOOL2022Q4/plants/img/service-2.jpg" alt="Planting" class="service_item-pic">
+                                <img src="./img/service-2.jpg" alt="Planting" class="service_item-pic">
                             </div>
                             <figcaption class="service_item-title">
                                 <div class="service_item-title-header">
@@ -136,9 +136,9 @@
                             </figcaption>
                         </figure>
     
-                        <figure class="service_item service_item_size_desktop">
+                        <figure class="service_item service_item_size_desktop js-servicesLawn">
                             <div class="service_item-pic-wrap">
-                                <img src="/letohx-JSFEPRESCHOOL2022Q4/plants/img/service-3.jpg" alt="Lawn care" class="service_item-pic3"> 
+                                <img src="./img/service-3.jpg" alt="Lawn care" class="service_item-pic3"> 
                             </div>                   
                             <figcaption class="service_item-title">
                                 <div class="service_item-title-header">
@@ -150,9 +150,9 @@
                             </figcaption>
                         </figure>
     
-                        <figure class="service_item service_item_size_desktop">
+                        <figure class="service_item service_item_size_desktop js-servicesPlanting">
                             <div class="service_item-pic-wrap">
-                                <img src="/letohx-JSFEPRESCHOOL2022Q4/plants/img/service-4.jpg" alt="Planting" class="service_item-pic">
+                                <img src="./img/service-4.jpg" alt="Planting" class="service_item-pic">
                             </div>
                             <figcaption class="service_item-title">
                                 <div class="service_item-title-header">
@@ -164,9 +164,9 @@
                             </figcaption>
                         </figure>
     
-                        <figure class="service_item service_item_size_desktop">
+                        <figure class="service_item service_item_size_desktop js-servicesGarden">
                             <div class="service_item-pic-wrap">
-                                <img src="/letohx-JSFEPRESCHOOL2022Q4/plants/img/service-5.jpg" alt="Garden care" class="service_item-pic">
+                                <img src="./img/service-5.jpg" alt="Garden care" class="service_item-pic">
                             </div>        
                             <figcaption class="service_item-title">
                                 <div class="service_item-title-header">
@@ -178,9 +178,9 @@
                             </figcaption>
                         </figure>
     
-                        <figure class="service_item service_item_size_desktop">
+                        <figure class="service_item service_item_size_desktop js-servicesPlanting">
                             <div class="service_item-pic-wrap">
-                                <img src="/letohx-JSFEPRESCHOOL2022Q4/plants/img/service-6.jpg" alt="Planting" class="service_item-pic">
+                                <img src="./img/service-6.jpg" alt="Planting" class="service_item-pic">
                             </div>               
                             <figcaption class="service_item-title">
                                 <div class="service_item-title-header">
@@ -205,24 +205,63 @@
                         </div>
                         
                         <div class="prices_items">
-                            <div class="button-prices-items">
+                            <div id="button-prices-items-basics" class="button-prices-items">
                                 <div class="accordinon_button_wrapper">
                                     <h3>Basics</h3>
-                                    <img src="./img/svg/accordion_btn.svg" alt="accordinon_button" class="accordinon_button-pic">
+                                    <img id="buttonPricesBasicsOpenPicBasics" src="./img/svg/accordion_btn.svg" alt="accordinon_button" class="accordinon_button-pic">
+                                </div>
+                                <div id="prices-dropdown-content-basics" class="prices-dropdown-content">
+                                    <p class="prices-dropdown-text">
+                                        Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    </p>
+                                    <div class="prices-dropdown-price-hour">
+                                        <span class="prices-dropdown-price-dollar">$</span>
+                                        <span class="prices-dropdown-price">15</span>
+                                        <span class="prices-dropdown-hour"> / per hour</span>
+                                    </div>
+                                    <div>
+                                        <a href="#contacts" class="prices-link">Order</a>
+                                    </div>
                                 </div>
                             </div>
     
-                            <div class="button-prices-items">
+                            <div id="button-prices-items-standard" class="button-prices-items">
                                 <div class="accordinon_button_wrapper">
                                     <h3>Standard</h3>
-                                    <img src="./img/svg/accordion_btn.svg" alt="accordinon_button" class="accordinon_button-pic">
+                                    <img id="buttonPricesBasicsOpenPicStandard" src="./img/svg/accordion_btn.svg" alt="accordinon_button" class="accordinon_button-pic">
+                                </div>
+                                <div id="prices-dropdown-content-standard" class="prices-dropdown-content">
+                                    <p class="prices-dropdown-text">
+                                        Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    </p>
+                                    <div class="prices-dropdown-price-hour">
+                                        <span class="prices-dropdown-price-dollar">$</span>
+                                        <span class="prices-dropdown-price">25</span>
+                                        <span class="prices-dropdown-hour"> / per hour</span>
+                                    </div>
+                                    <div>
+                                        <a href="#contacts" class="prices-link">Order</a>
+                                    </div>
                                 </div>
                             </div>
     
-                            <div class="button-prices-items">
+                            <div id="button-prices-items-pro_care" class="button-prices-items">
                                 <div class="accordinon_button_wrapper">
                                     <h3>Pro care</h3>
-                                    <img src="./img/svg/accordion_btn.svg" alt="accordinon_button" class="accordinon_button-pic">
+                                    <img id="button-prices-basics-open-pic-pro_care" src="./img/svg/accordion_btn.svg" alt="accordinon_button" class="accordinon_button-pic">
+                                </div>
+                                <div id="prices-dropdown-content-pro_care" class="prices-dropdown-content">
+                                    <p class="prices-dropdown-text">
+                                        Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    </p>
+                                    <div class="prices-dropdown-price-hour">
+                                        <span class="prices-dropdown-price-dollar">$</span>
+                                        <span class="prices-dropdown-price">35</span>
+                                        <span class="prices-dropdown-hour"> / per hour</span>
+                                    </div>
+                                    <div>
+                                        <a href="#contacts" class="prices-link">Order</a>
+                                    </div>
                                 </div>
                             </div>
     
@@ -289,16 +328,16 @@
                 <div class="social">
                     <ul class="social-list">
                         <li class="social-list__item">
-                            <a href="#!" class="social-list__link"><img src="/letohx-JSFEPRESCHOOL2022Q4/plants/img/svg/inst.svg" class="social-list__link-logo" alt="instagram"></a>
+                            <a href="#!" class="social-list__link"><img src="./img/svg/inst.svg" class="social-list__link-logo" alt="instagram"></a>
                         </li>
                         <li class="social-list__item">
-                            <a href="#!" class="social-list__link"><img src="/letohx-JSFEPRESCHOOL2022Q4/plants/img/svg/fb.svg" class="social-list__link-logo" alt="facebook"></a>
+                            <a href="#!" class="social-list__link"><img src="./img/svg/fb.svg" class="social-list__link-logo" alt="facebook"></a>
                         </li>
                         <li class="social-list__item">
-                            <a href="#!" class="social-list__link"><img src="/letohx-JSFEPRESCHOOL2022Q4/plants/img/svg/tw.svg" class="social-list__link-logo" alt="twitter"></a>
+                            <a href="#!" class="social-list__link"><img src="./img/svg/tw.svg" class="social-list__link-logo" alt="twitter"></a>
                         </li>
                         <li class="social-list__item">
-                            <a href="#!" class="social-list__link"><img src="/letohx-JSFEPRESCHOOL2022Q4/plants/img/svg/pinterest.svg" class="social-list__link-logo" alt="pinterest"></a>
+                            <a href="#!" class="social-list__link"><img src="./img/svg/pinterest.svg" class="social-list__link-logo" alt="pinterest"></a>
                         </li>
                     </ul>
                 </div>
