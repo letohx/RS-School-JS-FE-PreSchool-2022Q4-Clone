@@ -117,3 +117,107 @@
 
 }());
 
+
+//Prices active
+
+(function () {
+  const dropDowns = document.querySelectorAll('.button-prices-items');
+
+  const buttonPricesBasics = document.getElementById('button-prices-items-basics');   
+  const buttonPricesBasicsOpen = document.getElementById('prices-dropdown-content-basics');  
+  const buttonPricesBasicsOpenPicBasics = document.getElementById('buttonPricesBasicsOpenPicBasics');  
+  const buttonPricesBasicsOpenPicStandard = document.getElementById('buttonPricesBasicsOpenPicStandard');  
+  const buttonPricesBasicsOpenPicPro_care = document.getElementById('buttonPricesBasicsOpenPicPro_care');  
+
+  const buttonPricesStandard = document.getElementById('button-prices-items-standard');   
+  const buttonPricesStandardOpen = document.getElementById('prices-dropdown-content-standard');  
+  const buttonPricesStandardOpenPic = document.getElementById('buttonPricesStandardOpenPic');  
+  
+  const buttonPricesPro_care = document.getElementById('button-prices-items-pro_care');   
+  const buttonPricesPro_careOpen = document.getElementById('prices-dropdown-content-pro_care');  
+  const buttonPricesPro_careOpenPic = document.getElementById('button-prices-basics-open-pic-pro_care');  
+
+  const priceLinks = document.querySelectorAll('.prices-link');
+
+  priceLinks.forEach((link) => {
+    link.addEventListener('click', (event) => event.stopPropagation());
+  });
+
+  buttonPricesBasics.addEventListener('click', (event) => {
+    if (buttonPricesStandardOpen.classList.contains('prices-dropdown-content-open') || buttonPricesPro_careOpen.classList.contains('prices-dropdown-content-open')) {
+      buttonPricesBasicsOpen.classList.toggle('prices-dropdown-content-open');
+      buttonPricesBasics.classList.toggle('button-prices-items-open');
+      buttonPricesBasics.classList.toggle('prices_items-open');
+      buttonPricesBasicsOpenPicBasics.classList.toggle('accordinon_button-pic-open');
+
+      buttonPricesStandardOpen.classList.remove('prices-dropdown-content-open');
+      buttonPricesStandard.classList.remove('button-prices-items-open');
+      buttonPricesStandard.classList.remove('prices_items-open');
+      buttonPricesBasicsOpenPicStandard.classList.remove('accordinon_button-pic-open');
+
+      buttonPricesPro_careOpen.classList.remove('prices-dropdown-content-open');
+      buttonPricesPro_care.classList.remove('button-prices-items-open');
+      buttonPricesPro_care.classList.remove('prices_items-open');
+      buttonPricesPro_careOpenPic.classList.remove('accordinon_button-pic-open');
+    } else {
+      buttonPricesBasicsOpen.classList.toggle('prices-dropdown-content-open');
+      buttonPricesBasics.classList.toggle('button-prices-items-open');
+      buttonPricesBasics.classList.toggle('prices_items-open');
+      buttonPricesBasicsOpenPicBasics.classList.toggle('accordinon_button-pic-open');
+    }
+  })
+
+  buttonPricesStandard.addEventListener('click', (event) => {
+    if (buttonPricesBasicsOpen.classList.contains('prices-dropdown-content-open') || buttonPricesPro_careOpen.classList.contains('prices-dropdown-content-open')) {
+      buttonPricesStandardOpen.classList.toggle('prices-dropdown-content-open');
+      buttonPricesStandard.classList.toggle('button-prices-items-open');
+      buttonPricesStandard.classList.toggle('prices_items-open');
+      buttonPricesBasicsOpenPicStandard.classList.toggle('accordinon_button-pic-open');
+
+      buttonPricesBasicsOpen.classList.remove('prices-dropdown-content-open');
+      buttonPricesBasics.classList.remove('button-prices-items-open');
+      buttonPricesBasics.classList.remove('prices_items-open');
+      buttonPricesBasicsOpenPicBasics.classList.remove('accordinon_button-pic-open');
+    
+      buttonPricesPro_careOpen.classList.remove('prices-dropdown-content-open');
+      buttonPricesPro_care.classList.remove('button-prices-items-open');
+      buttonPricesPro_care.classList.remove('prices_items-open');
+      buttonPricesPro_careOpenPic.classList.remove('accordinon_button-pic-open');
+    } else {
+      buttonPricesStandardOpen.classList.toggle('prices-dropdown-content-open');
+      buttonPricesStandard.classList.toggle('button-prices-items-open');
+      buttonPricesStandard.classList.toggle('prices_items-open');
+      buttonPricesBasicsOpenPicStandard.classList.toggle('accordinon_button-pic-open');
+    }
+  })
+
+  buttonPricesPro_care.addEventListener('click', (event) => {
+    if (buttonPricesStandardOpen.classList.contains('prices-dropdown-content-open') || buttonPricesBasicsOpen.classList.contains('prices-dropdown-content-open')) {
+      buttonPricesPro_careOpen.classList.toggle('prices-dropdown-content-open');
+      buttonPricesPro_care.classList.toggle('button-prices-items-open');
+      buttonPricesPro_care.classList.toggle('prices_items-open');
+      buttonPricesPro_careOpenPic.classList.toggle('accordinon_button-pic-open');
+
+      buttonPricesBasicsOpen.classList.remove('prices-dropdown-content-open');
+      buttonPricesBasics.classList.remove('button-prices-items-open');
+      buttonPricesBasics.classList.remove('prices_items-open');
+      buttonPricesBasicsOpenPicBasics.classList.remove('accordinon_button-pic-open');
+    
+      buttonPricesStandardOpen.classList.remove('prices-dropdown-content-open');
+      buttonPricesStandard.classList.remove('button-prices-items-open');
+      buttonPricesStandard.classList.remove('prices_items-open');
+      buttonPricesBasicsOpenPicStandard.classList.remove('accordinon_button-pic-open');
+    } else {
+      buttonPricesPro_careOpen.classList.toggle('prices-dropdown-content-open');
+      buttonPricesPro_care.classList.toggle('button-prices-items-open');
+      buttonPricesPro_care.classList.toggle('prices_items-open');
+      buttonPricesPro_careOpenPic.classList.toggle('accordinon_button-pic-open');
+    }
+  })
+
+}());
+
+
+console.log(
+  '100 баллов\n1. При нажатии на кнопки:Gardens, Lawn, Planting происходит смена фокуса на услугах в разделе service +50\n2. Accordion в секции prices реализация 3-х выпадающих списков об услугах и ценах + 50'
+);
